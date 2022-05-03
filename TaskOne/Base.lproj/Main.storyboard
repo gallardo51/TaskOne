@@ -16,26 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kL9-kh-qIB">
-                                <rect key="frame" x="20" y="466" width="374" height="396"/>
-                                <color key="backgroundColor" systemColor="systemPinkColor"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wmj-Fn-SXd">
-                                <rect key="frame" x="20" y="44" width="374" height="396"/>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="396" translatesAutoresizingMaskIntoConstraints="NO" id="Wmj-Fn-SXd">
+                                <rect key="frame" x="20" y="60" width="374" height="392"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="374" placeholderIntrinsicHeight="396" translatesAutoresizingMaskIntoConstraints="NO" id="kL9-kh-qIB">
+                                <rect key="frame" x="20" y="468" width="374" height="392"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="kL9-kh-qIB" firstAttribute="height" secondItem="Wmj-Fn-SXd" secondAttribute="height" id="2C0-Gx-AHp"/>
-                            <constraint firstItem="Wmj-Fn-SXd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9rh-gu-eK9"/>
-                            <constraint firstItem="Wmj-Fn-SXd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NzM-On-yic"/>
-                            <constraint firstItem="kL9-kh-qIB" firstAttribute="top" secondItem="Wmj-Fn-SXd" secondAttribute="bottom" constant="26" id="XZi-XG-MLo"/>
-                            <constraint firstItem="kL9-kh-qIB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="o09-CX-pGs"/>
-                            <constraint firstItem="Wmj-Fn-SXd" firstAttribute="leading" secondItem="kL9-kh-qIB" secondAttribute="leading" id="seb-wZ-oFg"/>
-                            <constraint firstItem="Wmj-Fn-SXd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wC9-01-WdW"/>
-                            <constraint firstItem="kL9-kh-qIB" firstAttribute="width" secondItem="Wmj-Fn-SXd" secondAttribute="width" id="wPJ-nS-QIS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kL9-kh-qIB" secondAttribute="bottom" constant="2" id="ERp-Zk-RdF"/>
+                            <constraint firstItem="kL9-kh-qIB" firstAttribute="top" secondItem="Wmj-Fn-SXd" secondAttribute="bottom" constant="16" id="MCM-85-yhJ"/>
+                            <constraint firstItem="Wmj-Fn-SXd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="Zr8-xx-95d"/>
+                            <constraint firstItem="Wmj-Fn-SXd" firstAttribute="trailing" secondItem="kL9-kh-qIB" secondAttribute="trailing" id="biA-Ja-tjB"/>
+                            <constraint firstItem="kL9-kh-qIB" firstAttribute="width" secondItem="Wmj-Fn-SXd" secondAttribute="width" id="fm5-UI-3dg"/>
+                            <constraint firstItem="Wmj-Fn-SXd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="uVt-Op-mqC"/>
+                            <constraint firstItem="Wmj-Fn-SXd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="uyM-X7-drE"/>
+                            <constraint firstItem="kL9-kh-qIB" firstAttribute="height" secondItem="Wmj-Fn-SXd" secondAttribute="height" id="yfu-kW-FJp"/>
                         </constraints>
                     </view>
                 </viewController>
