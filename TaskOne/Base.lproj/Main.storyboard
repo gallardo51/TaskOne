@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,13 +15,41 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kL9-kh-qIB">
+                                <rect key="frame" x="20" y="466" width="374" height="396"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wmj-Fn-SXd">
+                                <rect key="frame" x="20" y="44" width="374" height="396"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kL9-kh-qIB" firstAttribute="height" secondItem="Wmj-Fn-SXd" secondAttribute="height" id="2C0-Gx-AHp"/>
+                            <constraint firstItem="Wmj-Fn-SXd" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="9rh-gu-eK9"/>
+                            <constraint firstItem="Wmj-Fn-SXd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NzM-On-yic"/>
+                            <constraint firstItem="kL9-kh-qIB" firstAttribute="top" secondItem="Wmj-Fn-SXd" secondAttribute="bottom" constant="26" id="XZi-XG-MLo"/>
+                            <constraint firstItem="kL9-kh-qIB" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="o09-CX-pGs"/>
+                            <constraint firstItem="Wmj-Fn-SXd" firstAttribute="leading" secondItem="kL9-kh-qIB" secondAttribute="leading" id="seb-wZ-oFg"/>
+                            <constraint firstItem="Wmj-Fn-SXd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="wC9-01-WdW"/>
+                            <constraint firstItem="kL9-kh-qIB" firstAttribute="width" secondItem="Wmj-Fn-SXd" secondAttribute="width" id="wPJ-nS-QIS"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="84"/>
+            <point key="canvasLocation" x="18.840579710144929" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
